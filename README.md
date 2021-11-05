@@ -4,7 +4,7 @@ Educational project for IoT at HES-SO mse
 **********************
 INSTALLATION
 **********************
-Clone the current repository (under ~/IoT/ if possible... Trying to update the code with relative path...)
+Clone the current repository 
 
 //Android APP - End user software & Network layer  
 Download app-release.apk on android device.
