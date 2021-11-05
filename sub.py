@@ -62,9 +62,9 @@ def parserf(message,url):
 
     if splitted[0]=="Rad":
         print("")
-        cmd = "~/IoT/knx/knx_client_script.py raw "+splitted[1]
+        cmd = "./IoT/knx/knx_client_script.py raw "+splitted[1]
         os.system(cmd)
-        cmd2 = "~/IoT/knx/knx_client_script.py raw "+splitted[2]
+        cmd2 = "./IoT/knx/knx_client_script.py raw "+splitted[2]
         os.system(cmd2)
         print("Rad")
         payload="Rad"
@@ -82,9 +82,9 @@ def parserf(message,url):
         print("")
         # x/y/z : function/floor/block
         #Everything is probably gonna be dtm in app 
-        cmd = "~/IoT/knx/knx_client_script.py raw "+splitted[1]
+        cmd = "./knx/knx_client_script.py raw "+splitted[1]
         os.system(cmd)
-        cmd2 = "~/IoT/knx/knx_client_script.py raw "+splitted[2]
+        cmd2 = "./knx/knx_client_script.py raw "+splitted[2]
         os.system(cmd2)
         print("Store")
         payload="Store"
