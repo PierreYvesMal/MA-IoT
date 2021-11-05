@@ -18,6 +18,7 @@ Replace /knx/knx_client_script.py
 //ZWAVE - Network layer  
 Follow instructions from https://gitedu.hesge.ch/lsds/teaching/master/iot/smart-building  
 Replace backend.py  
+note : raspberry is unusable (see ABOUT section) but only file to change on fresh install should be backend.py
 
 //Sub - Support layer  
 virtualenv env  
@@ -28,7 +29,7 @@ pip3 install -r requirements.txt
 **********************
 DEPLOY
 **********************
-
+!! Dimmers are hardcoded in app. This is to be changed. Couldn't test dynamically since raspberry is unusable. Room 1 will trigger node 2 and Romm 10 will trigger node 3
 source env/bin/activate  
 
 //KNX  
@@ -70,14 +71,18 @@ cd actuasim
 
 
 //sub  
-cd ~/MA-IoT  
+cd \~/MA-IoT  
 sudo apt-get install virtualenv  
 virtualenv env  
 source env/bin/activate  
-export GOOGLE_APPLICATION_CREDENTIALS=~/MA-IoT/iotmalengre-153b229d624c.json  
+export GOOGLE_APPLICATION_CREDENTIALS=\~/MA-IoT/iotmalengre-153b229d624c.json  
 pip3 install -r requirements.txt  
 python3 sub.py iotmalengre my-subscription 192.168.1.160:5000  
 
 **********************
 ABOUT
 **********************
+
+//Raspberry is unusable
+While trying to implement the sub to raspberry, missing package led to broken package.
+
