@@ -70,6 +70,8 @@ sudo apt-get install python3-pyqt5
 cd actuasim  
 ./actuasim.py &	//Leave this terminal open, start again in new one  
 
+//Flask
+Couldn't test flask due to problem with raspberry. 
 
 //sub  
 cd \~/MA-IoT  
@@ -80,10 +82,11 @@ export GOOGLE_APPLICATION_CREDENTIALS=\~/MA-IoT/iotmalengre-153b229d624c.json
 pip3 install -r requirements.txt  
 python3 sub.py iotmalengre my-subscription 192.168.1.160:5000  
 
+
 **********************
 ABOUT
 **********************
 
 //Raspberry is unusable
 While trying to implement the sub to raspberry, missing package led to broken package.  
-
+Tried to install everything on a raspbian VM but couldn't make it.
