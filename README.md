@@ -6,19 +6,19 @@ INSTALLATION
 **********************
 Clone the current repository (under ~/IoT/ if possible... Trying to update the code with relative path...)
 
-//Android APP - End user software & Network layer
+//Android APP - End user software & Network layer  
 Download app-release.apk on android device.
 
-//KNX - Network layer
+//KNX - Network layer  
 Follow instructions from https://gitedu.hesge.ch/lsds/teaching/master/iot/knx  
 But drop the --user from https://gitedu.hesge.ch/adrienma.lescourt/knxnet_iot/-/blob/master/README.md  
 Replace /knx/knx_client_script.py  
 
-//ZWAVE - Network layer
+//ZWAVE - Network layer  
 Follow instructions from https://gitedu.hesge.ch/lsds/teaching/master/iot/smart-building  
 Replace backend.py  
 
-//Sub - Support layer
+//Sub - Support layer  
 
 
 **********************
