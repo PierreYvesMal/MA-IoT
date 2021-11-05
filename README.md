@@ -20,11 +20,15 @@ Follow instructions from https://gitedu.hesge.ch/lsds/teaching/master/iot/smart-
 Replace backend.py  
 
 //Sub - Support layer  
-
+export GOOGLE_APPLICATION_CREDENTIALS=absolute_path_to/iotmalengre-153b229d624c.json  
+pip install -r requirements.txt 
 
 **********************
 DEPLOY
 **********************
+
+virtualenv env  
+source env/bin/activate  
 
 //KNX  
 ./knx/actuasim/actuasim.py &
@@ -34,10 +38,7 @@ DEPLOY
 ./flask-main.py -H [raspi ipv4]
 
 //Sub  
-virtualenv env  
-source env/bin/activate  
-export GOOGLE_APPLICATION_CREDENTIALS=absolute_path_to/iotmalengre-153b229d624c.json  
-pip install -r requirements.txt  
+export GOOGLE_APPLICATION_CREDENTIALS=absolute_path_to/iotmalengre-153b229d624c.json    
 python3 sub.py iotmalengre my-subscription [ipv4]  
 
 //App  
