@@ -20,14 +20,15 @@ Follow instructions from https://gitedu.hesge.ch/lsds/teaching/master/iot/smart-
 Replace backend.py  
 
 //Sub - Support layer  
+virtualenv env  
+source env/bin/activate  
 export GOOGLE_APPLICATION_CREDENTIALS=absolute_path_to/iotmalengre-153b229d624c.json  
-pip install -r requirements.txt 
+pip3 install -r requirements.txt 
 
 **********************
 DEPLOY
 **********************
 
-virtualenv env  
 source env/bin/activate  
 
 //KNX  
