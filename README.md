@@ -85,5 +85,5 @@ ABOUT
 **********************
 
 //Raspberry is unusable
-While trying to implement the sub to raspberry, missing package led to broken package.
+While trying to implement the sub to raspberry, missing package led to broken package.  
 
