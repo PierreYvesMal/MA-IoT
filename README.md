@@ -12,6 +12,7 @@ Download app-release.apk on android device.
 //KNX - Network layer  
 Follow instructions from https://gitedu.hesge.ch/lsds/teaching/master/iot/knx  
 But drop the --user from https://gitedu.hesge.ch/adrienma.lescourt/knxnet_iot/-/blob/master/README.md  
+!!knx base folder has to be in the same folder as sub.py for the relative path to work (couldn't make it work with the ipv4 directly)  
 Replace /knx/knx_client_script.py  
 
 //ZWAVE - Network layer  
