@@ -27,7 +27,7 @@ export GOOGLE_APPLICATION_CREDENTIALS=absolute_path_to/iotmalengre-153b229d624c.
 pip3 install -r requirements.txt 
 
 **********************
-DEPLOY
+DEPLOY (example below)  
 **********************
 !! Dimmers are hardcoded in app. This is to be changed. Couldn't test dynamically since raspberry is unusable. Room 1 will trigger node 2 and Romm 10 will trigger node 3
 source env/bin/activate  
@@ -46,8 +46,9 @@ python3 sub.py iotmalengre my-subscription [ipv4]
 //App  
 Launch app and witness changes in actuasim (only manual actions implemented)  
 
-
+************************************
 EXAMPLE TESTED ON FRESH UBUNTU INSTALL:  
+************************************
 cd~  
 sudo apt-get install git  
 git clone https://github.com/PierreYvesMal/MA-IoT  
