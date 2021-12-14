@@ -69,8 +69,7 @@ sudo apt-get install python3-pyqt5
 cd actuasim  
 ./actuasim.py &	//Leave this terminal open, start again in new one  
 
-//Flask
-(on the raspi)
+//Flask (on the raspi)  
 ./flask-main.py -H [raspi ipv4]
 
 //sub  
@@ -87,6 +86,6 @@ python3 sub.py iotmalengre my-subscription 192.168.1.160:5000
 ABOUT
 **********************
 
-//~~Raspberry is unusable~~FIXED
+//~~Raspberry is unusable~~FIXED  
 While trying to implement the sub to raspberry, missing package led to broken package.  
 Tried to install everything on a raspbian VM but couldn't make it.
