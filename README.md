@@ -18,7 +18,6 @@ Replace /knx/knx_client_script.py
 //ZWAVE - Network layer  
 Follow instructions from https://gitedu.hesge.ch/lsds/teaching/master/iot/smart-building  
 Replace backend.py  
-note : raspberry is unusable (see ABOUT section) but only file to change on fresh install should be backend.py
 
 //Sub - Support layer  
 virtualenv env  
@@ -71,7 +70,8 @@ cd actuasim
 ./actuasim.py &	//Leave this terminal open, start again in new one  
 
 //Flask
-Couldn't test flask due to problem with raspberry. 
+(on the raspi)
+./flask-main.py -H [raspi ipv4]
 
 //sub  
 cd \~/MA-IoT  
@@ -87,6 +87,6 @@ python3 sub.py iotmalengre my-subscription 192.168.1.160:5000
 ABOUT
 **********************
 
-//Raspberry is unusable
+//~~Raspberry is unusable~~FIXED
 While trying to implement the sub to raspberry, missing package led to broken package.  
 Tried to install everything on a raspbian VM but couldn't make it.
