@@ -14,6 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+import json
 import argparse
 import requests
 import os
@@ -74,7 +75,15 @@ def parserf(message,url):
         try:
             #Level should be splitted[2] but rly i don't remember how that exactly works and since raspy is broken...
             #arg="http://"+url+"/dimmer/"+splitted[1]+"/level"
+            #arg="http://"+url+"/dimmer/"+5+"/level"
             #payload = requests.get(arg).text
+
+            http_headers = {'Content-Type' : 'application/json'}
+            dataz={"node_id": 5, "value": splitted[2]}
+            #urlz=url+'/dimmer/set_level'
+            urlz='http://10.128.31.42:5000/dimmer/set_level'
+            payload = requests.post(urlz, data=json.dumps(dataz),headers=http_headers)
+            
             payload="Light"
         except:
             payload = "Light, Request never reached. Is the ipv4 set correctly ?"
